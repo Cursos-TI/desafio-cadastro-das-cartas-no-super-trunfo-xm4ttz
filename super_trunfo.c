@@ -117,5 +117,18 @@ int main() {
     printf("PIB per Capita: %s\n", (pib_per_capita1 > pib_per_capita2) ? "Carta 1 venceu" : (pib_per_capita2 > pib_per_capita1) ? "Carta 2 venceu" : "Empate");
     printf("Super Poder: %s\n", (super_poder1 > super_poder2) ? "Carta 1 venceu" : (super_poder2 > super_poder1) ? "Carta 2 venceu" : "Empate");
 
+    // ======= Comparação de um único atributo =======
+    printf("\n=== Comparacao de Cartas (Atributo: Populacao) ===\n");
+    printf("Carta 1 - %s (%c): %lu habitantes\n", cidade1, estado1, populacao1);
+    printf("Carta 2 - %s (%c): %lu habitantes\n", cidade2, estado2, populacao2);
+
+    if (populacao1 > populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+    } else if (populacao2 > populacao1) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+    } else {
+        printf("Resultado: Empate!\n");
+    }
+
     return 0;
 }
